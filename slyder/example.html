@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Anything can slyde | Slyder</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slyder.css">
+</head>
+<body>
+  <div class="slyder">
+    <div class="slyder-nav">
+      <span class="slyde-left">prev</span>
+      <span class="slyde-right">next</span>
+    </div>
+    <div class="slyde-wrapper">
+      <div class="slyde slyde-active">
+        <div class="slyde-caption">
+          <div class="slyde-left">
+            <blockquote>"The world is a global village"</blockquote>
+          </div>
+        </div>
+        <img src="assets/images/img_1.jpg" alt="Two flamingos on a beach">
+      </div>
+      <div class="slyde">
+        <div class="slyde-caption">
+          <div class="slyde-right">
+            <h1>THE SUN</h1>
+            <p>Our caption supports HTML, as you can see.</p>
+          </div>
+        </div>
+        <img src="assets/images/img_2.jpg" alt="Three firemen fighting fire">
+      </div>
+      <div class="slyde">
+        <div class="slyde-caption">
+          <div class="slyde-left">
+            <h1>THE MOON</h1>
+            <p>Now this caption is on the left.</p>
+          </div>
+        </div>
+        <img src="assets/images/img_3.jpg" alt="A frog inside a mug">
+      </div>
+    </div>
+    <div class="slyder-bottom-nav">
+      <span data-slyde="0" class="slyde-active"></span>
+      <span data-slyde="1"></span>
+      <span data-slyde="2"></span>
+     </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.slyder.js"></script>
+
+  <script type="text/javascript">
+    $('.slyder').slyder({
+      onAnimationComplete: function( options, itemOptions, slideIndex ) {
+        $('.slyder .slyder-bottom-nav span').removeClass( 'slyde-active' );
+        $('.slyder .slyder-bottom-nav span:eq(' + slideIndex + ')').addClass( 'slyde-active' );
+      }
+    });
+  </script>
+</body>
+</html>

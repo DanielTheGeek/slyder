@@ -1,0 +1,150 @@
+.slyder {
+	display: block;
+	margin: 10px;
+	background: #333;
+	width: 700px;
+	height: 195px;
+	position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+
+	position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+ }
+.slyder .slyder-nav {
+	width: inherit;
+	position: absolute;
+	z-index: 50;
+	top: 25%;
+}
+.slyder .slyder-nav > span {
+	display: block;
+	text-align: center;
+	margin: 0 10px;
+	opacity: 0;
+	transition: opacity 200ms;
+	-webkit-transition: opacity 200ms;
+	-moz-transition: opacity 200ms;
+	-o-transition: opacity 200ms;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 6px 10px;
+}
+.slyder:hover .slyder-nav > span {
+ opacity: 0.6;
+}
+.slyder:hover .slyder-nav > span:hover {
+ opacity: 1;
+}
+.slyde-right, .slyde-left {
+	background: #333;
+}
+.slyder .slyde-wrapper .slyde-right {
+	border-top-left-radius: 5px;
+}
+.slyder .slyde-wrapper .slyde-left {
+	border-top-right-radius: 5px;
+}
+.slyder .slyder-nav .slyde-right {
+	float: right;
+}
+.slyder .slyder-nav .slyde-left {
+	float: left;
+}
+.slyder .slyde-wrapper {
+	display: block;
+	overflow: hidden;
+	height: 195px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.slyder .slyde-wrapper .slyde {
+ display: none;
+ height: 195px;
+}
+.slyder .slyde-wrapper .slyde.slyde-active {
+ display: block;
+}
+.slyder .slyde-wrapper .slyde .slyde-caption {
+	display: block;
+	position: absolute;
+	margin-bottom: 10px;
+	bottom: 0;
+	z-index: 20;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+}
+.slyder blockquote {
+	font-style: italic;
+}
+.slyde-left, .slyde-right {
+	padding: 10px;
+	width: auto;
+	height: auto;
+	background: rgba(0, 0, 0, .6);
+}
+.slyder .slyde-wrapper .slyde .slyde-caption .slyde-left {
+	float: left;
+}
+.slyder .slyde-wrapper .slyde .slyde-caption .slyde-right {
+	float: right;
+}
+.slyder .slyde-wrapper .slyde img {
+ width: auto;
+}
+.slyder .slyder-bottom-nav {
+	display: block;
+	text-align: center;
+	width: inherit;
+	padding-top: 10px
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+}
+.slyder .slyder-bottom-nav span {
+ background: #CCC;
+ width: 10px;
+ height: 10px;
+ display: inline-block;
+ border-radius: 5px;
+ cursor: pointer;
+ margin: 0 2px;
+ transition: background 200ms;
+ -webkit-transition: background 200ms;
+ -moz-transition: background 200ms;
+ -o-transition: background 200ms;
+}
+.slyder .slyder-bottom-nav span.slyde-active {
+ background: #333;
+}
